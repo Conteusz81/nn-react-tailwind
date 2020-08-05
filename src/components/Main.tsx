@@ -4,9 +4,9 @@ import stewImg from "../assets/img/stew.jpg";
 const Main = () => {
     return (
         <div className="px-16 py-6">
-            <div>
+            <div className="flex justify-end">
                 <a href="#" className="text-primary">Log in</a>
-                <a href="#" className="text-primary">Sign up</a>
+                <a href="#" className="text-primary ml-2">Sign up</a>
             </div>
 
             <header>
@@ -35,7 +35,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="flex justify-center">
                 <div className="bg-secondary-100 text-secondary-200">Load more</div>
             </div>
         </div>
