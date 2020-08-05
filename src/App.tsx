@@ -10,7 +10,7 @@ import { routes } from "./routes/routes";
 function App() {
   return (
       <BrowserRouter>
-          <div className="text-gray-600 font-body">
+          <div className="text-gray-600 font-body grid md:grid-cols-3">
               <NavBar />
               <Switch>
                   <Route exact path={routes.home} render={() => <Redirect to={routes.main} />} />

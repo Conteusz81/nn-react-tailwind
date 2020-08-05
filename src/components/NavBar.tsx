@@ -4,7 +4,7 @@ import {routes} from "../routes/routes";
 
 const NavBar = () => {
     return (
-        <div>
+        <div className="md:col-span-1">
             <nav>
                 <div>
                     <h1 className="font-bold uppercase p-4 border-b border-gray-100">
