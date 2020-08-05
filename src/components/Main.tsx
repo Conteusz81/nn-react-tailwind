@@ -5,8 +5,8 @@ const Main = () => {
     return (
         <div className="px-16 py-6">
             <div>
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
+                <a href="#" className="text-primary">Log in</a>
+                <a href="#" className="text-primary">Sign up</a>
             </div>
 
             <header>
@@ -36,7 +36,7 @@ const Main = () => {
             </div>
 
             <div>
-                <div>Load more</div>
+                <div className="bg-secondary-100 text-secondary-200">Load more</div>
             </div>
         </div>
     );
