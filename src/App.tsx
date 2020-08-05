@@ -1,17 +1,24 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './styles/main.css';
+import NavBar from "./components/NavBar";
+import Main from "./components/Main";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import { routes } from "./routes/routes";
 
 function App() {
   return (
-    <div className="h-64">
-      <div className="p-4 m-4 bg-green-600">
-        <h1 className="text-2xl font-bold text-white">Tailwind CSS</h1>
-      </div>
-      <div className="p-4 m-4 bg-green-300 h-full">
-        <h2 className="text-green-900">Tailwind CSS React JS configuration</h2>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Test Button</button>
-      </div>
-    </div>
+      <BrowserRouter>
+          <div>
+              <NavBar />
+              <Switch>
+                  <Route exact path={routes.home} component={Main}/>
+                  <Route exact path={routes.about} component={About} />
+                  <Route exact path={routes.contact} component={Contact} />
+              </Switch>
+          </div>
+      </BrowserRouter>
   );
 }
 
