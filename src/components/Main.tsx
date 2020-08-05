@@ -10,12 +10,12 @@ const Main = () => {
             </div>
 
             <header>
-                <h2>Recipes</h2>
-                <h3>For Ninjas</h3>
+                <h2 className="text-gray-700 text-6xl font-semibold">Recipes</h2>
+                <h3 className="text-2xl font-semibold">For Ninjas</h3>
             </header>
 
             <div>
-                <h4>Latest Recipes</h4>
+                <h4 className="font-bold">Latest Recipes</h4>
 
                 <div>
                     {/*cards go here*/}
@@ -28,7 +28,7 @@ const Main = () => {
                     </div>
                 </div>
 
-                <h4>Most Popular</h4>
+                <h4 className="font-bold">Most Popular</h4>
 
                 <div>
                     {/*cards go here*/}

@@ -7,23 +7,23 @@ const NavBar = () => {
         <div>
             <nav>
                 <div>
-                    <h1>
+                    <h1 className="font-bold uppercase">
                         <NavLink to={routes.home}>Food Ninja</NavLink>
                     </h1>
                 </div>
-                <ul>
+                <ul className="text-gray-700">
                     <li>
-                        <NavLink to={routes.home}>
+                        <NavLink to={routes.main}  activeClassName="font-bold">
                             <span>Home</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={routes.about}>
+                        <NavLink to={routes.about} activeClassName="font-bold">
                             <span>About</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to={routes.contact}>
+                        <NavLink to={routes.contact} activeClassName="font-bold">
                             <span>Contact</span>
                         </NavLink>
                     </li>
