@@ -34,7 +34,7 @@ const mockupRecipes = [
 
 const Main = () => {
     return (
-        <div className="px-16 py-6 bg-gray-100">
+        <div className="px-16 py-6 bg-gray-100 md:col-span-2">
             <div className="flex justify-center md:justify-end">
                 <a href="#" className="text-primary">Log in</a>
                 <a href="#" className="text-primary ml-2">Sign up</a>
@@ -48,7 +48,7 @@ const Main = () => {
             <div>
                 <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
-                <div className="mt-8">
+                <div className="mt-8 grid lg:grid-cols-3 gap-10">
                     {/*cards go here*/}
                     { mockupRecipes.map(recipe => <Card key={recipe.id} {...recipe}/> )}
                 </div>
