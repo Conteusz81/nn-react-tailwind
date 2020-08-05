@@ -36,8 +36,8 @@ const Main = () => {
     return (
         <div className="px-16 py-6 bg-gray-100 md:col-span-2">
             <div className="flex justify-center md:justify-end">
-                <a href="#" className="text-primary">Log in</a>
-                <a href="#" className="text-primary ml-2">Sign up</a>
+                <a href="#" className="btn text-primary border-primary md:border-2">Log in</a>
+                <a href="#" className="btn text-primary ml-2 border-primary md:border-2">Sign up</a>
             </div>
 
             <header>
@@ -61,7 +61,7 @@ const Main = () => {
             </div>
 
             <div className="flex justify-center">
-                <div className="bg-secondary-100 text-secondary-200">Load more</div>
+                <div className="btn bg-secondary-100 text-secondary-200">Load more</div>
             </div>
         </div>
     );
