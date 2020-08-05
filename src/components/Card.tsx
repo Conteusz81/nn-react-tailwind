@@ -1,13 +1,23 @@
 import React from 'react';
-import stewImg from "../assets/img/stew.jpg";
 
-const Card = () => {
+interface ICardProps {
+    img: string;
+    name: string;
+    recipe: string;
+    author: string;
+    prepareTime: number;
+}
+
+const Card: React.FC<ICardProps> = ({ img, name, recipe, author, prepareTime }) => {
     return (
-        <div className="bg-white rounded overflow-hidden shadow-md">
-            <img src={stewImg} alt="stew" className="w-full h-32 sm:h-48 object-cover"/>
+        <div className="card">
+            <img src={img} alt={name} className="w-full h-32 sm:h-48 object-cover"/>
             <div className="m-4">
-                <span className="font-bold">5 Bean Chili Stew</span>
-                <span className="block text-gray-500 text-sm">Recipe by Mario</span>
+                <span className="font-bold">{recipe}</span>
+                <span className="block text-gray-500 text-sm">Recipe by {author}</span>
+            </div>
+            <div className="badge">
+                <span>{prepareTime} min</span>
             </div>
         </div>
     );
