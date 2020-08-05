@@ -1,9 +1,9 @@
 import React from 'react';
-import stewImg from "../assets/img/stew.jpg";
+import Card from "./Card";
 
 const Main = () => {
     return (
-        <div className="px-16 py-6">
+        <div className="px-16 py-6 bg-gray-100">
             <div className="flex justify-center md:justify-end">
                 <a href="#" className="text-primary">Log in</a>
                 <a href="#" className="text-primary ml-2">Sign up</a>
@@ -19,13 +19,7 @@ const Main = () => {
 
                 <div className="mt-8">
                     {/*cards go here*/}
-                    <div>
-                        <img src={stewImg} alt="stew" />
-                            <div>
-                                <span>5 Bean Chili Stew</span>
-                                <span>Recipe by Mario</span>
-                            </div>
-                    </div>
+                    <Card />
                 </div>
 
                 <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
