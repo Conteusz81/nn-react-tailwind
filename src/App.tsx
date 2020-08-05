@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import './styles/main.css';
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";
@@ -10,12 +10,13 @@ import { routes } from "./routes/routes";
 function App() {
   return (
       <BrowserRouter>
-          <div>
+          <div className="text-gray-600">
               <NavBar />
               <Switch>
-                  <Route exact path={routes.home} component={Main}/>
-                  <Route exact path={routes.about} component={About} />
-                  <Route exact path={routes.contact} component={Contact} />
+                  <Route exact path={routes.home} render={() => <Redirect to={routes.main} />} />
+                  <Route path={routes.main} component={Main}/>
+                  <Route path={routes.about} component={About} />
+                  <Route path={routes.contact} component={Contact} />
               </Switch>
           </div>
       </BrowserRouter>
