@@ -7,7 +7,7 @@ const NavBar = () => {
         <div>
             <nav>
                 <div>
-                    <h1 className="font-bold uppercase">
+                    <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                         <NavLink to={routes.home}>Food Ninja</NavLink>
                     </h1>
                 </div>

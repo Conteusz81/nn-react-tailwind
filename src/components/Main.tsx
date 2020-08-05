@@ -3,7 +3,7 @@ import stewImg from "../assets/img/stew.jpg";
 
 const Main = () => {
     return (
-        <div>
+        <div className="px-16 py-6">
             <div>
                 <a href="#">Log in</a>
                 <a href="#">Sign up</a>
@@ -15,9 +15,9 @@ const Main = () => {
             </header>
 
             <div>
-                <h4 className="font-bold">Latest Recipes</h4>
+                <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
-                <div>
+                <div className="mt-8">
                     {/*cards go here*/}
                     <div>
                         <img src={stewImg} alt="stew" />
@@ -28,9 +28,9 @@ const Main = () => {
                     </div>
                 </div>
 
-                <h4 className="font-bold">Most Popular</h4>
+                <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
 
-                <div>
+                <div className="mt-8">
                     {/*cards go here*/}
                 </div>
             </div>
