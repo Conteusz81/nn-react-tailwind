@@ -1,5 +1,36 @@
 import React from 'react';
 import Card from "./Card";
+import stewImg from "../assets/img/stew.jpg";
+import curryImg from "../assets/img/curry.jpg";
+import noodlesImg from "../assets/img/noodles.jpg";
+
+const mockupRecipes = [
+    {
+        id: 1,
+        img: stewImg,
+        name: "stew",
+        recipe: "5 Bean Chilli Stew",
+        author: "Mario",
+        prepareTime: 25
+    },
+    {
+        id: 2,
+        img: curryImg,
+        name: "curry",
+        recipe: "Tofu Curry",
+        author: "Mario",
+        prepareTime: 25
+    },
+    {
+        id: 3,
+        img: noodlesImg,
+        name: "noodles",
+        recipe: "Veg Noodles",
+        author: "Mario",
+        prepareTime: 25
+    }
+];
+
 
 const Main = () => {
     return (
@@ -19,7 +50,7 @@ const Main = () => {
 
                 <div className="mt-8">
                     {/*cards go here*/}
-                    <Card />
+                    { mockupRecipes.map(recipe => <Card key={recipe.id} {...recipe}/> )}
                 </div>
 
                 <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
