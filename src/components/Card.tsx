@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiClock } from 'react-icons/fi';
 
 interface ICardProps {
     img: string;
@@ -17,6 +18,7 @@ const Card: React.FC<ICardProps> = ({ img, name, recipe, author, prepareTime }) 
                 <span className="block text-gray-500 text-sm">Recipe by {author}</span>
             </div>
             <div className="badge">
+                <FiClock className="w-5 inline-block"/>
                 <span>{prepareTime} min</span>
             </div>
         </div>
