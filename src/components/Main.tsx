@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Card from "./Card";
 import stewImg from "../assets/img/stew.jpg";
 import curryImg from "../assets/img/curry.jpg";
@@ -36,8 +36,8 @@ const Main = () => {
     return (
         <div className="px-16 py-6 bg-gray-100 md:col-span-2">
             <div className="flex justify-center md:justify-end">
-                <a href="#" className="btn text-primary border-primary md:border-2">Log in</a>
-                <a href="#" className="btn text-primary ml-2 border-primary md:border-2">Sign up</a>
+                <a href="#" className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+                <a href="#" className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
             </div>
 
             <header>
@@ -47,21 +47,18 @@ const Main = () => {
 
             <div>
                 <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
-
                 <div className="mt-8 grid lg:grid-cols-3 gap-10">
-                    {/*cards go here*/}
                     { mockupRecipes.map(recipe => <Card key={recipe.id} {...recipe}/> )}
                 </div>
 
                 <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
-
                 <div className="mt-8">
                     {/*cards go here*/}
                 </div>
             </div>
 
             <div className="flex justify-center">
-                <div className="btn bg-secondary-100 text-secondary-200">Load more</div>
+                <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
             </div>
         </div>
     );

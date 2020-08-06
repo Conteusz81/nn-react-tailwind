@@ -17,7 +17,7 @@ const Card: React.FC<ICardProps> = ({ img, name, recipe, author, prepareTime }) 
                 <span className="font-bold">{recipe}</span>
                 <span className="block text-gray-500 text-sm">Recipe by {author}</span>
             </div>
-            <div className="badge">
+            <div className="badge flex items-center">
                 <FiClock className="w-5 inline-block"/>
                 <span>{prepareTime} min</span>
             </div>
