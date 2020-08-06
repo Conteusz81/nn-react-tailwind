@@ -53,7 +53,11 @@ const Recipes: React.FC<IPathNameProps> = ({pathname}) => {
             </div>
 
             <div className="flex justify-center">
-                <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
+                <div
+                    className="secondary-button hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50"
+                >
+                    Load more
+                </div>
             </div>
         </>
     );

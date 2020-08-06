@@ -5,8 +5,18 @@ import { routes } from "../../routes/routes";
 const UserNav = () => {
     return (
         <div className="flex justify-center md:justify-end">
-            <Link to={routes.login} className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</Link>
-            <Link to={routes.register} className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</Link>
+            <Link
+                to={routes.login}
+                className="primary-button hover:bg-primary hover:text-white md:border-2"
+            >
+                Log in
+            </Link>
+            <Link
+                to={routes.register}
+                className="primary-button hover:bg-primary hover:text-white md:border-2 ml-2"
+            >
+                Sign up
+            </Link>
         </div>
     );
 };
