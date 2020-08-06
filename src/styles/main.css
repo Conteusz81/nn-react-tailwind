@@ -14702,7 +14702,51 @@ video {
   font-size: 0.75rem;
   font-weight: 700;
   cursor: pointer;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+}
+
+.primary-button {
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  --text-opacity: 1;
+  color: #FF6363;
+  color: rgba(255, 99, 99, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #FF6363;
+  border-color: rgba(255, 99, 99, var(--border-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.secondary-button {
+  border-radius: 9999px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  --bg-opacity: 1;
+  background-color: #E2E2D5;
+  background-color: rgba(226, 226, 213, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #888883;
+  color: rgba(136, 136, 131, var(--text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms
 }
 
 @media (min-width: 640px){
