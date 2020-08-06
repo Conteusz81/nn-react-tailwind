@@ -1,13 +1,6 @@
 import React from 'react';
 import { FiClock } from 'react-icons/fi';
-
-interface ICardProps {
-    img: string;
-    name: string;
-    recipe: string;
-    author: string;
-    prepareTime: number;
-}
+import { ICardProps } from "../../utils/interfaces";
 
 const Card: React.FC<ICardProps> = ({ img, name, recipe, author, prepareTime }) => {
     return (
