@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import { NavLink } from "react-router-dom";
 import cx from "classnames";
-import {routes} from "../routes/routes";
+import {routes} from "../../routes/routes";
 import { FiHome, FiMenu } from 'react-icons/fi'
 import { FaRegQuestionCircle, FaRegEnvelope } from 'react-icons/fa'
+import NavLinkItem from "../molecules/NavLinkItem";
 
 const NavBar = () => {
 
@@ -25,24 +26,9 @@ const NavBar = () => {
                     </div>
                 </div>
                 <ul className={menuListClasses}>
-                    <li className="py-1">
-                        <NavLink to={routes.main} className="px-4 flex justify-end border-r-4 border-white" activeClassName="font-bold  border-primary">
-                            <span>Home</span>
-                            <FiHome className="w-4 h-5 ml-2"/>
-                        </NavLink>
-                    </li>
-                    <li className="py-1">
-                        <NavLink to={routes.about} className="px-4 flex justify-end border-r-4 border-white" activeClassName="font-bold border-primary">
-                            <span>About</span>
-                            <FaRegQuestionCircle className="w-4 h-5 ml-2" />
-                        </NavLink>
-                    </li>
-                    <li className="py-1">
-                        <NavLink to={routes.contact} className="px-4 flex justify-end border-r-4 border-white" activeClassName="font-bold border-primary">
-                            <span>Contact</span>
-                            <FaRegEnvelope className="w-4 h-5 ml-2" />
-                        </NavLink>
-                    </li>
+                    <NavLinkItem route={routes.recipes} icon={<FiHome />} />
+                    <NavLinkItem route={routes.about} icon={<FaRegQuestionCircle />} />
+                    <NavLinkItem route={routes.contact} icon={<FaRegEnvelope />} />
                 </ul>
 
             </nav>
