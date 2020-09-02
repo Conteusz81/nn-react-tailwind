@@ -1,6 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React with TailwindCSS
 
-## Available Scripts
+## Very simple responsive page build on React and TailwindCSS.
+
+### You can check it out here:
+
+https://tailwind-react.netlify.app/
+
+### or:
 
 In the project directory, you can run:
 
